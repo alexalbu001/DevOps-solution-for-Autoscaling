@@ -4,7 +4,8 @@ import { showLoading, hideLoading, showMessage } from '../utils';
 
 const RegisterScreen = {
   after_render: () => {
-
+    setUserInfo(data);
+    redirectUser();
   },
   render: () => {
    

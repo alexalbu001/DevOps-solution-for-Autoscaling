@@ -5,6 +5,13 @@ import Error404Screen from './srceens/Error404Screen';
 import CartScreen from './srceens/CartScreen';
 import SigninScreen from './srceens/SigninScreen';
 import RegisterScreen from './srceens/RegisterScreen';
+import { getUserInfo } from './localStorage';
+import { isUserSignedIn } from './api';
+import ShippingScreen from './srceens/ShippingScreen';
+import PaymentScreen from './srceens/PaymentScreen';
+import PlaceOrderScreen from './srceens/PlaceOrderScreen';
+
+
 
 const routes = {
   '/': HomeScreen,
@@ -13,6 +20,9 @@ const routes = {
   '/cart': CartScreen,
   '/signin': SigninScreen,
   '/register': RegisterScreen,
+  '/shipping': ShippingScreen,
+  '/payment': PaymentScreen,
+  '/placeorder': PlaceOrderScreen,
 };
 const router = async () => {
   const request = parseRequestUrl();
@@ -28,3 +38,4 @@ const router = async () => {
 };
 window.addEventListener('load', router);
 window.addEventListener('hashchange', router);
+

@@ -45,7 +45,7 @@ const CartScreen = {
       });
     });
     document.getElementById('checkout-button').addEventListener('click', () => {
-      document.location.hash = '/signin';
+      document.location.hash = '/shipping';
     });
   },
   render: async () => {
