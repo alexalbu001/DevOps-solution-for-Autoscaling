@@ -17,10 +17,7 @@ const ShippingScreen = {
       });
   },
   render: () => {
-    const { name } = getUserInfo();
-    if (!name) {
-      document.location.hash = '/';
-    }
+
     const { address, city, postalCode, country } = getShipping();
     return `
     ${CheckoutSteps.render({ step1: true, step2: true })}

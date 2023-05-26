@@ -15,10 +15,7 @@ const PaymentScreen = {
       });
   },
   render: () => {
-    const { name } = getUserInfo();
-    if (!name) {
-      document.location.hash = '/';
-    }
+ 
     return `
     ${CheckoutSteps.render({ step1: true, step2: true, step3: true })}
     <div class="form-container">
