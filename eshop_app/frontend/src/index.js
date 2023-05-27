@@ -1,4 +1,4 @@
-import HomeScreen from './srceens/HomeScreen';
+import HomeScreen from './srceens/HomeScreen.js';
 import ProductScreen from './srceens/ProductScreen';
 import { parseRequestUrl } from './utils';
 import Error404Screen from './srceens/Error404Screen';
@@ -25,6 +25,7 @@ const routes = {
   '/placeorder': PlaceOrderScreen,
 };
 const router = async () => {
+  try{
   const request = parseRequestUrl();
   const parseUrl =
     (request.resource ? `/${request.resource}` : '/') +
@@ -34,7 +35,14 @@ const router = async () => {
 
   const main = document.getElementById('main-container');
   main.innerHTML = await screen.render();
-  await screen.after_render();
+  if (screen.after_render) {
+    await screen.after_render();
+  } else {
+    console.error(`Screen component for ${parseUrl} does not implement after_render`);
+  }
+} catch (error) {
+  console.error(`Error rendering screen for ${parseUrl}`, error);
+  }
 };
 window.addEventListener('load', router);
 window.addEventListener('hashchange', router);

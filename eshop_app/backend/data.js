@@ -25,7 +25,7 @@ export default {
       _id: '3',
       name: 'Adidas Mens Long Sleeve Hoodie',
       category: 'Shirts',
-      image: '/images/product-3.jpg',
+      image: './images/product-3.jpg',
       price: 59,
       brand: 'Adidas',
       rating: 4,

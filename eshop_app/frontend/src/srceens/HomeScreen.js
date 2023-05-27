@@ -48,5 +48,8 @@ const HomeScreen = {
         .join('\n')}
     `;
   },
+  after_render: function() {
+    // This function intentionally left blank
+  }
 };
 export default HomeScreen;

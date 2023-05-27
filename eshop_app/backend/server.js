@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import data from './data';
+import data from './data.js';
 import config from './config';
 import userRouter from './routers/userRouter';
 
