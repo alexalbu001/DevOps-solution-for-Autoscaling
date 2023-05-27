@@ -1,10 +1,10 @@
 import axios from 'axios';
-import Rating from '../components/Rating';
+import Rating from '../components/Rating.js';
 
 const HomeScreen = {
   render: async () => {
     const response = await axios({
-      url: 'http://localhost:8081/api/products',
+      url: 'http://3.73.119.73:8081/api/products',
       headers: {
         'Content-Type': 'application/json',
       },

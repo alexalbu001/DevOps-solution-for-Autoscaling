@@ -1,15 +1,15 @@
-import HomeScreen from './srceens/HomeScreen';
-import ProductScreen from './srceens/ProductScreen';
+import HomeScreen from './srceens/HomeScreen.js';
+import ProductScreen from './srceens/ProductScreen.js';
 import { parseRequestUrl } from './utils';
-import Error404Screen from './srceens/Error404Screen';
-import CartScreen from './srceens/CartScreen';
-import SigninScreen from './srceens/SigninScreen';
-import RegisterScreen from './srceens/RegisterScreen';
-import { getUserInfo } from './localStorage';
+import Error404Screen from './srceens/Error404Screen.js';
+import CartScreen from './srceens/CartScreen.js';
+import SigninScreen from './srceens/SigninScreen.js';
+import RegisterScreen from './srceens/RegisterScreen.js';
+import { getUserInfo } from './localStorage.js';
 import { isUserSignedIn } from './api';
-import ShippingScreen from './srceens/ShippingScreen';
-import PaymentScreen from './srceens/PaymentScreen';
-import PlaceOrderScreen from './srceens/PlaceOrderScreen';
+import ShippingScreen from './srceens/ShippingScreen.js';
+import PaymentScreen from './srceens/PaymentScreen.js';
+import PlaceOrderScreen from './srceens/PlaceOrderScreen.js';
 
 
 

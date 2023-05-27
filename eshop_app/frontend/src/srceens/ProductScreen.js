@@ -1,6 +1,6 @@
-import { parseRequestUrl } from '../utils';
-import { getProduct } from '../api';
-import Rating from '../components/Rating';
+import { parseRequestUrl } from '../utils.js';
+import { getProduct } from '../api.js';
+import Rating from '../components/Rating.js';
 
 const ProductScreen = {
   after_render: () => {

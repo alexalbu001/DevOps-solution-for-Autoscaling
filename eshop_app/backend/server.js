@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import data from './data';
-import config from './config';
-import userRouter from './routers/userRouter';
+import data from './data.js';
+import config from './config.js';
+import userRouter from './routers/userRouter.js';
 
 // mongoose
 //   .connect(config.MONGODB_URL, {
@@ -57,6 +57,6 @@ app.post('/api/signin', (req, res) => {
   }
 });
 
-app.listen(8081, () => {
-  console.log('serve at http://localhost:8081');
+app.listen(8081,'0.0.0.0', () => {
+  console.log('serve at http://0.0.0.0:8081');
 });

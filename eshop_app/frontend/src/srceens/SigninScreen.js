@@ -53,9 +53,9 @@
   
 //   export default SigninScreen;
 
-import { signin } from '../api';
-import { getUserInfo, setUserInfo } from '../localStorage';
-import { redirectUser } from '../utils';
+import { signin } from '../api.js';
+import { getUserInfo, setUserInfo } from '../localStorage.js';
+import { redirectUser } from '../utils.js';
 
 const SigninScreen = {
   after_render: async () => {

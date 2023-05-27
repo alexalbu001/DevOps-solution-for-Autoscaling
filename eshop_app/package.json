@@ -2,6 +2,7 @@
   "name": "jsamazona",
   "version": "1.0.0",
   "description": "JS AMAZONA",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
@@ -22,8 +23,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "pm2": "^5.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",

@@ -3,10 +3,10 @@ import {
     getShipping,
     getPayment,
     cleanCart,
-  } from '../localStorage';
-  import CheckoutSteps from '../components/CheckoutSteps';
-  import { showLoading, hideLoading, showMessage } from '../utils';
-  import { createOrder } from '../api';
+  } from '../localStorage.js';
+  import CheckoutSteps from '../components/CheckoutSteps.js';
+  import { showLoading, hideLoading, showMessage } from '../utils.js';
+  import { createOrder } from '../api.js';
   
   const convertCartToOrder = () => {
     const orderItems = getCartItems();

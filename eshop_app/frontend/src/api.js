@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { apiUrl } from './config';
-import { setUserInfo } from './localStorage';
+import { apiUrl } from './config.js';
+import { setUserInfo } from './localStorage.js';
 
 export const getProduct = async (id) => {
   try {
