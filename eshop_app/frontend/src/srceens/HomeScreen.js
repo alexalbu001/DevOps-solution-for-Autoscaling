@@ -4,7 +4,7 @@ import Rating from '../components/Rating.js';
 const HomeScreen = {
   render: async () => {
     const response = await axios({
-      url: 'http://3.73.119.73:8081/api/products',
+      url: 'http://localhost:8081/api/products',
       headers: {
         'Content-Type': 'application/json',
       },
